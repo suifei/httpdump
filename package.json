@@ -1,0 +1,37 @@
+{
+  "name": "httpdump",
+  "version": "1.0.0",
+  "description": "A generic HTTP/HTTPS protocol packet capture script tool for iOS App based on frida.",
+  "main": "src/index.ts",
+    "scripts": {
+      "prepare": "npm run build",
+      "build": "frida-compile src/index.ts -o dist/httpdump.js -c",
+      "watch": "frida-compile src/index.ts -o dist/httpdump.js -w"
+    },
+    "devDependencies": {
+      "@types/frida-gum": "^16.2.0",
+      "@types/node": "^14.14.10",
+      "frida-compile": "^10.0.0"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suifei/httpdump.git"
+  },
+  "keywords": [
+    "frida",
+    "http",
+    "https",
+    "capture",
+    "tool",
+    "script",
+    "iOS",
+    "objc",
+    "NSURL"
+  ],
+  "author": "suifei@gmail.com",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/suifei/httpdump/issues"
+  },
+  "homepage": "https://github.com/suifei/httpdump#readme"
+}
